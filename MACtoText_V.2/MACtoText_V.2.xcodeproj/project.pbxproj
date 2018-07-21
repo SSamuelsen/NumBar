@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		622A7E5F20FD72EE005490EA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A7E5E20FD72EE005490EA /* MenuViewController.swift */; };
+		622A7E6620FD7958005490EA /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A7E6520FD7958005490EA /* FormViewController.swift */; };
+		622A7E70210009CE005490EA /* CollectionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A7E6F210009CE005490EA /* CollectionFormViewController.swift */; };
+		622A7E7D21015E91005490EA /* formCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A7E7C21015E91005490EA /* formCell.swift */; };
+		622A7E892102CD3D005490EA /* MACtoText_V.2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 622A7E872102CD3D005490EA /* MACtoText_V.2.xcdatamodeld */; };
 		62445F7920E712CD00682075 /* TextAnalyze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62445F7820E712CD00682075 /* TextAnalyze.swift */; };
 		62445F8020E7183F00682075 /* ViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62445F7F20E7183F00682075 /* ViewDesign.swift */; };
 		62445F8220E7190B00682075 /* ButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62445F8120E7190B00682075 /* ButtonDesign.swift */; };
@@ -101,6 +106,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		622A7E5E20FD72EE005490EA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		622A7E6520FD7958005490EA /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		622A7E6F210009CE005490EA /* CollectionFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFormViewController.swift; sourceTree = "<group>"; };
+		622A7E7C21015E91005490EA /* formCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formCell.swift; sourceTree = "<group>"; };
+		622A7E882102CD3D005490EA /* MACtoText_V.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MACtoText_V.2.xcdatamodel; sourceTree = "<group>"; };
 		62445F7820E712CD00682075 /* TextAnalyze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnalyze.swift; sourceTree = "<group>"; };
 		62445F7F20E7183F00682075 /* ViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDesign.swift; sourceTree = "<group>"; };
 		62445F8120E7190B00682075 /* ButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDesign.swift; sourceTree = "<group>"; };
@@ -136,6 +146,7 @@
 		62ADD89220E5C19D00911404 = {
 			isa = PBXGroup;
 			children = (
+				622A7E872102CD3D005490EA /* MACtoText_V.2.xcdatamodeld */,
 				62ADD8C520E5C22900911404 /* GPUImage.xcodeproj */,
 				62ADD8B420E5C21C00911404 /* SwiftOCR.xcodeproj */,
 				62ADD8B220E5C21400911404 /* framework */,
@@ -159,6 +170,9 @@
 				62ADD8A020E5C19D00911404 /* ViewController.swift */,
 				62445FD420E9947400682075 /* ImageViewController.swift */,
 				62445FDB20E9A65E00682075 /* StartupViewController.swift */,
+				622A7E6520FD7958005490EA /* FormViewController.swift */,
+				622A7E6F210009CE005490EA /* CollectionFormViewController.swift */,
+				622A7E5E20FD72EE005490EA /* MenuViewController.swift */,
 				62ADD8A220E5C19D00911404 /* Main.storyboard */,
 				62ADD8A520E5C19F00911404 /* Assets.xcassets */,
 				62ADD8A720E5C19F00911404 /* LaunchScreen.storyboard */,
@@ -168,6 +182,7 @@
 				62445F8120E7190B00682075 /* ButtonDesign.swift */,
 				62445F8320E72C5700682075 /* CaptureManager.swift */,
 				62445FE120F2D86500682075 /* DictionaryClass.swift */,
+				622A7E7C21015E91005490EA /* formCell.swift */,
 			);
 			path = MACtoText_V.2;
 			sourceTree = "<group>";
@@ -323,13 +338,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				62445FDC20E9A65F00682075 /* StartupViewController.swift in Sources */,
+				622A7E6620FD7958005490EA /* FormViewController.swift in Sources */,
+				622A7E5F20FD72EE005490EA /* MenuViewController.swift in Sources */,
 				62445F8020E7183F00682075 /* ViewDesign.swift in Sources */,
+				622A7E70210009CE005490EA /* CollectionFormViewController.swift in Sources */,
+				622A7E7D21015E91005490EA /* formCell.swift in Sources */,
 				62445F7920E712CD00682075 /* TextAnalyze.swift in Sources */,
 				62445FE220F2D86500682075 /* DictionaryClass.swift in Sources */,
 				62445F8420E72C5700682075 /* CaptureManager.swift in Sources */,
 				62445FD520E9947400682075 /* ImageViewController.swift in Sources */,
 				62ADD8A120E5C19D00911404 /* ViewController.swift in Sources */,
 				62ADD89F20E5C19D00911404 /* AppDelegate.swift in Sources */,
+				622A7E892102CD3D005490EA /* MACtoText_V.2.xcdatamodeld in Sources */,
 				62445F8220E7190B00682075 /* ButtonDesign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,6 +563,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		622A7E872102CD3D005490EA /* MACtoText_V.2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				622A7E882102CD3D005490EA /* MACtoText_V.2.xcdatamodel */,
+			);
+			currentVersion = 622A7E882102CD3D005490EA /* MACtoText_V.2.xcdatamodel */;
+			path = MACtoText_V.2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 62ADD89320E5C19D00911404 /* Project object */;
 }

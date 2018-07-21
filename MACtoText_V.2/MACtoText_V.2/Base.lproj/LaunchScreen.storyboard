@@ -17,16 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NumBarLogo" translatesAutoresizingMaskIntoConstraints="NO" id="WpN-Ps-sFM">
-                                <rect key="frame" x="67.5" y="106" width="240" height="182"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Support." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEg-f6-w3S">
+                                <rect key="frame" x="16" y="53" width="272" height="49"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="41"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2mQ-1y-P09">
+                                <rect key="frame" x="0.0" y="0.0" width="13" height="667"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WpN-Ps-sFM" secondAttribute="trailing" constant="67.5" id="1VE-wX-e9h"/>
-                            <constraint firstItem="WpN-Ps-sFM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67.5" id="9bw-hj-TD6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WpN-Ps-sFM" secondAttribute="bottom" constant="379" id="VUl-bQ-4pD"/>
-                            <constraint firstItem="WpN-Ps-sFM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="scP-2M-TLR"/>
+                            <constraint firstItem="2mQ-1y-P09" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="4t2-vb-J7s"/>
+                            <constraint firstItem="ZEg-f6-w3S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="JZL-Xb-PN8"/>
+                            <constraint firstItem="2mQ-1y-P09" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Lvp-Am-ePR"/>
+                            <constraint firstItem="ZEg-f6-w3S" firstAttribute="leading" secondItem="2mQ-1y-P09" secondAttribute="trailing" constant="3" id="Ngq-pS-irL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZEg-f6-w3S" secondAttribute="trailing" constant="87" id="gvE-jJ-lpC"/>
+                            <constraint firstItem="2mQ-1y-P09" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kPF-mK-7hw"/>
+                            <constraint firstItem="ZEg-f6-w3S" firstAttribute="leading" secondItem="2mQ-1y-P09" secondAttribute="trailing" constant="3" id="ti5-Tr-pfw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZEg-f6-w3S" secondAttribute="bottom" constant="565" id="vll-03-O4R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -36,7 +47,4 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="NumBarLogo" width="500" height="500"/>
-    </resources>
 </document>

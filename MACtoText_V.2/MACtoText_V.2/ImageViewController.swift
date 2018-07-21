@@ -43,7 +43,7 @@ class ImageViewController: UIViewController {
     
     @IBAction func scaneAnotherPressed(_ sender: Any) {
         
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)     //dismiss back to the the camera 
         
         
         
