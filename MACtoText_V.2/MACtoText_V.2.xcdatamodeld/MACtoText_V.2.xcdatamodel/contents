@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14270.9" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Forms" representedClassName="Forms" syncable="YES" codeGenerationType="class">
+    <entity name="Forms" representedClassName="Forms" syncable="YES">
         <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pcName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>

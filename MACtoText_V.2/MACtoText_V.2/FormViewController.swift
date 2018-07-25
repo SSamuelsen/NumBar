@@ -29,6 +29,7 @@ struct form {
     var macAddress: UITextField
     var deskNumber: UITextField
     var dueDate: UITextField
+    var otherApps: UITextView
     
     
     
@@ -56,6 +57,8 @@ class FormViewController: UIViewController {
     @IBOutlet weak var macAddress: UITextField!
     @IBOutlet weak var deskNumber: UITextField!
     @IBOutlet weak var dueDate: UITextField!
+    @IBOutlet weak var otherApps: UITextView!
+    
     
     var formName: form!
     
@@ -87,9 +90,7 @@ class FormViewController: UIViewController {
         
         
         
-        //storing core data
         
-        saveData()
         
         
         
@@ -121,17 +122,44 @@ class FormViewController: UIViewController {
     
     
     
-    @IBAction func createFormButtonPressed(_ sender: Any) {
+    @IBAction func createFormButtonPressed(_ sender: Any) {         //this will save the new item to CoreData
+        
+        let item = Forms(context: context)
+        
         
         if((pcName.text?.isEmpty != true)&&(departmentName.text?.isEmpty != true)) {        //pc name and department can't be empty before making the form
             
+            //set defaults values for un-entered text
+            if (employeeName.text?.isEmpty == true){
+                employeeName.text = "-"
+            }
+            if (employeeNumber.text?.isEmpty == true){
+                employeeNumber.text = "-"
+            }
+            if (ticketNumber.text?.isEmpty == true){
+                ticketNumber.text = "-"
+            }
+            if (macAddress.text?.isEmpty == true){
+                macAddress.text = "-"
+            }
+            if (deskNumber.text?.isEmpty == true){
+                deskNumber.text = "-"
+            }
+            if (dueDate.text?.isEmpty == true){
+                dueDate.text = "-"
+            }
+            if (otherApps.text?.isEmpty == true){
+                otherApps.text = "-"
+            }
+            
+            //set formName object equal to all the fields
+            
+            formName = form(newHireSwitch: newHireSwitch, leaseReturnSwitch: leaseReturnSwitch, replaceSwitch: replaceSwitch, wipedSwitch: wipedSwitch, collectionSwitch: collectionSwitch, imagedSwitch: imagedSwitch, driversSwitch: driversSwitch, primaryUserSwitch: primaryUserSwitch, softwareSwitch: softwareSwitch, employeeName: employeeName, departmentName: departmentName, employeeNumber: employeeNumber, ticketNumber: ticketNumber, pcName: pcName, macAddress: macAddress, deskNumber: deskNumber, dueDate: dueDate, otherApps: otherApps)
+            
+            //let computerName = formName.pcName.text         //get the computer name
             
             
-            formName = form(newHireSwitch: newHireSwitch, leaseReturnSwitch: leaseReturnSwitch, replaceSwitch: replaceSwitch, wipedSwitch: wipedSwitch, collectionSwitch: collectionSwitch, imagedSwitch: imagedSwitch, driversSwitch: driversSwitch, primaryUserSwitch: primaryUserSwitch, softwareSwitch: softwareSwitch, employeeName: employeeName, departmentName: departmentName, employeeNumber: employeeNumber, ticketNumber: ticketNumber, pcName: pcName, macAddress: macAddress, deskNumber: deskNumber, dueDate: dueDate)
-            
-            let computerName = formName.pcName.text         //get the computer name
-            
-            //save the form information:
+            //WORK: implement test logic here to check for duplicates in pcName
             
             
             
@@ -140,14 +168,28 @@ class FormViewController: UIViewController {
             
             
             
+            //saving the values:
+            if let pcName = pcName.text {
+                item.pcName = pcName            //set the attribute equal to the user inputed name
+            }
+            if let department = departmentName.text {
+                item.department = department
+            }
             
+            ad.saveContext()        //save the data
+            
+            //_ = navigationController?.popViewController(animated: true)
+            
+            
+           
+           
             performSegue(withIdentifier: "createForm", sender: self)        //segue to view all the forms
             
         }
         
         
         
-    }
+    }//end of create form button Pressed
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -155,7 +197,15 @@ class FormViewController: UIViewController {
         
         
         
-        collectionFormView.formArray.append(formName!.pcName.text!)         //add the computer name to the array
+        if formName != nil {
+        
+            collectionFormView.formArray.append(formName)         //add the new form to the array
+        
+        }
+        
+        
+        //save the array before going to the new controller!!!!!!!!!!!!!!
+        //saveData(form: collectionFormView.formArray)        //save the array in the collectionFormView
         
         
     }
@@ -163,40 +213,34 @@ class FormViewController: UIViewController {
     
     
 
-    func saveData() {
+    
+    
+
+    
+    
+    func saveData(form: [form]) {           //pass in the array of forms
         let context = appDelegate.persistentContainer.viewContext           //allows for interaction with core data
-        let newForm = NSEntityDescription.insertNewObject(forEntityName: "Forms", into: context)        //save into context
+        //let newForm = NSEntityDescription.insertNewObject(forEntityName: "Forms", into: context) as! form      //save into context
         
-        newForm.setValue("Test", forKey: "pcName")
-        newForm.setValue("Test2", forKey: "department")
+        for item in form {
+            let newForm = NSEntityDescription.insertNewObject(forEntityName: "Forms", into: context) as! Forms
+            //To get firstName, lastName and age access the item
+            newForm.department = item.departmentName.text
+            newForm.pcName = item.pcName.text
+           
+            
+        }
+        
+        
+        
         
         
         do {
             
             try context.save()          //save the data
             print("works")
-            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Forms")
             
-            request.returnsObjectsAsFaults = false
             
-            let results = try context.fetch(request)        //try to get the data
-            
-            if results.count > 0 {          //check if there are actually any data stored first
-                
-                for result in results as! [NSManagedObject] {
-                    
-                    if let pcName = result.value(forKey:"pcName") as? String {
-                        
-                        print(pcName)
-                        
-                    }//end of if let
-                    if let department = result.value(forKey:"department") as? String {
-                        print(department)
-                    }
-                    
-                }
-                
-            }
             
         }
         catch {
@@ -205,7 +249,7 @@ class FormViewController: UIViewController {
             
         }
         
-    }
+    }//end of saveData
     
     
     

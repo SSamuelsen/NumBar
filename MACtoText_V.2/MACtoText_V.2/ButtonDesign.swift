@@ -12,6 +12,28 @@ import UIKit
 class Button: UIButton {
     
     
+    override init(frame: CGRect){
+        super.init(frame: frame)
+        setup()
+    }
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    private func setup() {
+        
+        
+        titleLabel?.textColor = .white
+        //backgroundColor = .blue
+        layer.cornerRadius = (frame.height)/2
+        
+        
+    }
+    
+    
     @IBInspectable var cornerRadius: CGFloat = 0 {  //@IBInspectable allows to change in the storyboard
         
         didSet{

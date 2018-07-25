@@ -12,7 +12,11 @@ class formCell: UICollectionViewCell {
     
     @IBOutlet weak var formLabel: UILabel!          //conects to the label in the collection view
     
-    
+    func configureCell(forms: Forms) {
+        
+        formLabel.text = forms.pcName
+        
+    }
     
     
     

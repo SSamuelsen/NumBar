@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--tech support.-->
+        <!--tech toolbox.-->
         <scene sceneID="dbt-pI-fxk">
             <objects>
                 <viewController id="Mit-5Q-1Xq" customClass="MenuViewController" customModule="MACtoText_V_2" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,16 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zd-hy-7e1" customClass="Button" customModule="MACtoText_V_2" customModuleProvider="target">
-                                <rect key="frame" x="111" y="522" width="152" height="94"/>
+                                <rect key="frame" x="111" y="193" width="152" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="MAC Analyzer"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,37 +37,17 @@
                                     <action selector="macAnalyzeButtonPressed:" destination="Mit-5Q-1Xq" eventType="touchUpInside" id="UV8-lv-r8y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xup-g5-TUA" customClass="Button" customModule="MACtoText_V_2" customModuleProvider="target">
-                                <rect key="frame" x="16" y="420" width="152" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
-                                <state key="normal" title="Computer Form"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="computerFormButtonPressed:" destination="Mit-5Q-1Xq" eventType="touchUpInside" id="a2o-lM-nZN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coZ-0H-E4f" customClass="Button" customModule="MACtoText_V_2" customModuleProvider="target">
-                                <rect key="frame" x="207" y="420" width="152" height="94"/>
+                                <rect key="frame" x="111" y="295" width="152" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="View Forms"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,11 +57,48 @@
                                     <action selector="viewFormsButtonPressed:" destination="Mit-5Q-1Xq" eventType="touchUpInside" id="w9V-ZV-K5l"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xup-g5-TUA" customClass="Button" customModule="MACtoText_V_2" customModuleProvider="target">
+                                <rect key="frame" x="111" y="397" width="152" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Computer Form"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="computerFormButtonPressed:" destination="Mit-5Q-1Xq" eventType="touchUpInside" id="a2o-lM-nZN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lar-nY-3em" customClass="Button" customModule="MACtoText_V_2" customModuleProvider="target">
+                                <rect key="frame" x="111" y="499" width="152" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Schedule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0NS-wP-k3k"/>
                     </view>
-                    <navigationItem key="navigationItem" title="tech support." id="bcR-AR-6R5"/>
+                    <navigationItem key="navigationItem" title="tech toolbox." id="bcR-AR-6R5"/>
                     <connections>
                         <outlet property="computerFormButtonOutlet" destination="Xup-g5-TUA" id="Psl-hD-oXp"/>
                         <outlet property="macAnalyzeButtonOutlet" destination="8Zd-hy-7e1" id="h8T-I8-ZXM"/>
@@ -497,6 +514,7 @@
                         <outlet property="leaseReturnSwitch" destination="umj-46-ojK" id="3zC-Xs-IQb"/>
                         <outlet property="macAddress" destination="Jog-VD-eRX" id="3ad-fY-5OH"/>
                         <outlet property="newHireSwitch" destination="D8o-Tc-6Pv" id="IQ8-S6-K1g"/>
+                        <outlet property="otherApps" destination="GUQ-wN-7Yh" id="vkD-v1-ldj"/>
                         <outlet property="pcName" destination="X3i-BY-R4e" id="V6b-dp-GyJ"/>
                         <outlet property="primaryUserSwitch" destination="AjZ-Nt-CNu" id="epw-2W-BpK"/>
                         <outlet property="replaceSwitch" destination="dAo-Qn-pzg" id="rqG-Nn-qW4"/>
@@ -585,14 +603,99 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w6g-yj-Uer"/>
                     </view>
-                    <navigationItem key="navigationItem" title="forms." id="23n-GN-Fcv"/>
+                    <navigationItem key="navigationItem" title="forms." id="23n-GN-Fcv">
+                        <barButtonItem key="rightBarButtonItem" title="Delete" id="pce-Bh-0u5">
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="BKx-fQ-2w4" id="oRr-K7-XHQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="aQD-Kg-HHn" id="cZE-wa-8zy"/>
+                        <segue destination="if7-eU-Jj1" kind="push" identifier="formDetails" id="8Tg-FN-qwp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMo-yS-Gxt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1369" y="-822"/>
+            <point key="canvasLocation" x="972" y="-822"/>
+        </scene>
+        <!--details.-->
+        <scene sceneID="YRu-5g-y0G">
+            <objects>
+                <viewController id="if7-eU-Jj1" customClass="formDetailViewController" customModule="MACtoText_V_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9rm-Gk-sAn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Udk-h6-XaZ" customClass="View" customModule="MACtoText_V_2" customModuleProvider="target">
+                                <rect key="frame" x="16" y="77" width="343" height="577"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCc-mf-8aP" customClass="Button" customModule="MACtoText_V_2" customModuleProvider="target">
+                                        <rect key="frame" x="235" y="469" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Ygt-3O-0ko"/>
+                                            <constraint firstAttribute="width" constant="100" id="puE-Xy-cyA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Print">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bev-AZ-kt9" customClass="SSTextField" customModule="MACtoText_V_2" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="8" width="323" height="39"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Bev-AZ-kt9" firstAttribute="leading" secondItem="Udk-h6-XaZ" secondAttribute="leading" constant="10" id="AYA-jJ-Vbj"/>
+                                    <constraint firstAttribute="trailing" secondItem="uCc-mf-8aP" secondAttribute="trailing" constant="8" id="HXB-oJ-Yn3"/>
+                                    <constraint firstItem="Bev-AZ-kt9" firstAttribute="top" secondItem="Udk-h6-XaZ" secondAttribute="top" constant="8" id="aRZ-Sa-rCZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="uCc-mf-8aP" secondAttribute="bottom" constant="8" id="gOT-SH-ue2"/>
+                                    <constraint firstItem="Bev-AZ-kt9" firstAttribute="centerX" secondItem="Udk-h6-XaZ" secondAttribute="centerX" id="krk-VG-tnE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bev-AZ-kt9" secondAttribute="trailing" constant="10" id="pS7-CR-eW2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Udk-h6-XaZ" firstAttribute="centerX" secondItem="9rm-Gk-sAn" secondAttribute="centerX" id="6St-ds-bs0"/>
+                            <constraint firstItem="Udk-h6-XaZ" firstAttribute="leading" secondItem="4nm-Pc-l9n" secondAttribute="leading" constant="16" id="FWD-x9-RPl"/>
+                            <constraint firstItem="4nm-Pc-l9n" firstAttribute="bottom" secondItem="Udk-h6-XaZ" secondAttribute="bottom" constant="13" id="Yen-Ec-6Fi"/>
+                            <constraint firstItem="4nm-Pc-l9n" firstAttribute="trailing" secondItem="Udk-h6-XaZ" secondAttribute="trailing" constant="16" id="gDd-ME-Kdp"/>
+                            <constraint firstItem="Udk-h6-XaZ" firstAttribute="top" secondItem="4nm-Pc-l9n" secondAttribute="top" constant="13" id="lT2-XY-5Tx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4nm-Pc-l9n"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="details." id="Yc7-CF-Ygp">
+                        <barButtonItem key="rightBarButtonItem" title="Delete" id="90U-ad-wkY">
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="if7-eU-Jj1" id="6WW-yh-1aL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pcNameField" destination="Bev-AZ-kt9" id="vHX-Xq-aeH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3yD-e4-udb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.5999999999999" y="-822.63868065967017"/>
         </scene>
         <!--analyze.-->
         <scene sceneID="7JS-4l-hJi">
